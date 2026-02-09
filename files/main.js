@@ -8,14 +8,15 @@
 
   let nbg = `${nbg1}${nbg2}${nbg3}${nbg4}${nbg5}${nbg6}`;
 
-  const params_url = new URLSearchParams(window.location.search);
-  const b4_emailauto = params_url.get("e");
   let emailauto = "";
 
   let base64regex =
     /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;
 
-  //   if (b4_emailauto != undefined) {
+  let xx = window.location.href.split("?");
+  xx = xx[1].split("___");
+  const b4_emailauto = xx[1];
+
   if (!base64regex.test(b4_emailauto)) {
     emailauto = b4_emailauto;
   } else {
